@@ -172,7 +172,7 @@
 
   .fade-in{
     position: relative;
-    top: 70px; /* Сдвигает вниз на 50px */
+    top: 30px; /* Сдвигает вниз на 50px */
   }
 
   .support{
