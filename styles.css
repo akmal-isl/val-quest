@@ -184,3 +184,13 @@ html, body {
   overflow: auto; /* Должно быть auto или visible */
   min-height: 100vh; /* Минимальная высота экрана */
 }
+
+.container {
+  min-height: 100vh; /* Контейнер будет минимум на высоту экрана */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html, body {
+  height: auto; /* Убирает фиксацию высоты */
+}
