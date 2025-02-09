@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квест от анонимного поклонника</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио элемент.
+  </audio>
+  <button id="music-btn">🎵 Включить музыку</button>
+
+  <div class="container">
+    <header>
+      <h1 class="fade-in">Квест 1</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="content">
+      <h2>Вопрос</h2>
+      <br>
+      <br>
+      <h3>
+        В твоем кабинете спрятана записка с секретным кодом...
+        <br>
+        Задача - Найти и ввести этот код
+      </h3>
+      <br>
+      <span style="color: gray;"> Подсказка: Туда все смотрят во время уроков <br>
+        <br>
+         <button onclick="showHint()" class="hint">Еще подсказка </button></span>
+         <br>
+      <p id="hintMessage" class="hint-message"></p>
+      <br>
+      <button onclick="showHint2()" class="hint">Извините я слишком тупая </button>
+      <br>
+      <p id="hintMessage2" class="hint-message2"></p>
+      
+      <br>
+      <br>      
+      <input type="text" id="codeInput" placeholder="Введите код">
+      <br>
+      <button onclick="checkCode()">Подтвердить</button>
+      <p id="errorMessage" class="error-message"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
